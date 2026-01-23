@@ -1,1 +1,19 @@
+<!-- This is the main CSS file for all pages -->
+
+* {
+  box-sizing: border-box;
+}
+body, div {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: red;
+  top: 0;
+  left: 0;
+  height: 10em;
+  text-align: center;
+}
+
+#links
 
