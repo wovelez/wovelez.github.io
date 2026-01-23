@@ -13,6 +13,7 @@ body, div {
   left: 0;
   height: 10em;
   text-align: center;
+  
 }
 
 #footer {
@@ -21,6 +22,7 @@ body, div {
   font-size: 20px;
   text-decoration: none;
   font-family: Arial;
-  text-color: white;
+  font-color: white;
+  text-align: center;
 }
 
