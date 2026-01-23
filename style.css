@@ -38,3 +38,16 @@ body, div {
   border-bottom: black 1px;
   text-align: center;
 }
+#links * {
+  display: inline-block;
+  margin-top: 2em;
+  padding-top: 0.25em;
+}
+#links a {
+  margin-left: 2em;
+  color: white;
+  height: 100%
+}
+#links p {
+  margin-left: 5em;
+}
