@@ -10,11 +10,10 @@ body, div {
 }
 
 #header {
-  background-color: red;
+  background-color: black;
   top: 0;
   left: 0;
-  height: 10em;
-  text-align: center;
+  height: 200px;
 }
 
 #footer {
