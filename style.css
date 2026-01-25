@@ -50,6 +50,7 @@ body, div {
 	border-top: black 1px;
 	border-bottom: black 1px;
 	text-align: center;
+}
 
 #links * {
 	display: inline-block;
