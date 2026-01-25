@@ -33,6 +33,13 @@ body {
 	text-align: center;
 }
 
+#header img {
+	height: 100$;
+	object-fit: contain;
+	display: block;
+	margin: 0 auto;
+}
+
 #buffer {
 	margin-top:2em;
 }
