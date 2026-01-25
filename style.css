@@ -1,92 +1,89 @@
 <!-- This is the main CSS file for all pages -->
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
+
 html, body {
 	height: 100%;
 	margin: 0;
 }
 
-
 body, div {
-  margin: 0;
-  padding: 0;
-background-color: #f1ebf2;
-text-align: center;
-font-family: Helvetica;
-
+	margin: 0;
+	padding: 0;
+	background-color: #f1ebf2;
+	text-align: center;
+	font-family: Helvetica;
 }
 
 #header {
-  background-color: black;
-  top: 0;
-  left: 0;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
+	background-color: black;
+	top: 0;
+	left: 0;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 }
- #buffer {
+
+#buffer {
 	margin-top:2em;
 }
 
 #footer {
-  background-color: #60f7eb;
-  
-  font-size: 10px;
-  text-decoration: none;
-  font-family: Arial;
-  color: white;
-  text-align: center;
+	background-color: #60f7eb;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Arial;
+	color: white;
+	text-align: center;
 }
 
 #links {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 0;
-  background-color: #8d1da3;
-  border-top: black 1px;
-  border-bottom: black 1px;
-  text-align: center;
-}
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 0;
+	background-color: #8d1da3;
+	border-top: black 1px;
+	border-bottom: black 1px;
+	text-align: center;
+
 #links * {
-  display: inline-block;
-  
-  padding-top: 0.25em;
+	display: inline-block;
+	padding-top: 0.25em;
 }
+	
 #links a {
-  margin-left: 2em;
-  color: white;
-  height: 100%
+	margin-left: 2em;
+	color: white;
+	height: 100%;
 }
+
 #links p {
-  margin-left: 5em;
+	margin-left: 5em;
 }
 
 #sidebar {
 	width: 15%;
-	
 	background-color: #5f7a78;
 	display: block;
 	text-align: center;
 	padding-top: 0;
-	
 }
+
 #sidebar a{
 	color: white;
 }
- #content {
 	
-	
+#content {
 	width: 85%;
 }
 
 #wrapper {
 	display: flex;
-	
 }	
 
 #row {
