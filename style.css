@@ -11,7 +11,6 @@ html{
 body, div {
 	margin: 0;
 	padding: 0;
-	background-color: #f1ebf2;
 	text-align: center;
 	font-family: Helvetica;
 }
@@ -21,6 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	background-color: #f1ebf2;
 }
 
 #header {
@@ -31,6 +31,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	display: flex;
 }
 
 #header img {
