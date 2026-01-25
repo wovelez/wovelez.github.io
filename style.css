@@ -75,12 +75,20 @@ body, div {
 	padding-top: 0;
 }
 
+body.no_sidebar #sidebar {
+	display: none;
+}
+
 #sidebar a{
 	color: white;
 }
 	
 #content {
 	width: 85%;
+}
+
+body.no_sidebar #content {
+	width: 100%;
 }
 
 #wrapper {
