@@ -27,16 +27,18 @@ body {
 #header {
 	background-color: black;
 	width: 100%;
-	height: 200px;
+	max-height: 200px;
 	overflow: hidden;
+	display: flex;
+	justify-center: center;
+	aligh-items: center;
 }
 
 #header img {
 	display: block;
-	margin: 0 auto;
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	height: auto;
+	max-height: 100%;
 }
 
 #buffer {
