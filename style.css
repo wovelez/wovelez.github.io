@@ -27,18 +27,18 @@ body {
 #header {
 	background-color: black;
 	width: 100%;
-	max-height: 250px;
+	<!-- max-height: 250px;
 	overflow: hidden;
 	display: flex;
 	justify-center: center;
-	aligh-items: center;
+	aligh-items: center; -->
 }
 
 #header img {
 	display: block;
 	width: 100%;
 	height: auto;
-	max-height: 100%;
+	<!-- max-height: 100%; -->
 }
 
 #buffer {
