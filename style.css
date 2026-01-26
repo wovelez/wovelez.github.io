@@ -31,7 +31,7 @@ body {
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	aligh-items: center;
+	align-items: center;
 }
 
 #header img {
@@ -123,6 +123,6 @@ body.no_sidebar #content {
 }
 
 #col_img {
-	vertial-align: middle;
+	vertical-align: middle;
 	object-fit: cover;
 }
