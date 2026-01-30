@@ -53,7 +53,6 @@ body {
 	font-family: Arial;
 	color: black;
 	text-align: center;
-	flex-shrink: 0;
 }
 
 #links {
@@ -66,11 +65,6 @@ body {
 	border-top: black 1px;
 	border-bottom: black 1px;
 	text-align: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 0.5em;
-	padding: 0.5em 0;
 }
 
 #links * {
@@ -79,9 +73,9 @@ body {
 }
 	
 #links a {
-	margin: 0;
-	padding: 0.25em 0.75em;;
+	margin-left: 2em;
 	color: white;
+	height: 100%;
 	text-decoration: none;
 }
 
@@ -98,14 +92,14 @@ body {
 
 .left-sidebar {
 	
-	width: 3%;
+	width: 8%;
 }
 .left-sidebar-links {
-	width: 10%;
+	width: 15%;
 }
 .right-sidebar {
 	
-	width: 3%;
+	width: 8%;
 }
 
 #sidebar a{
@@ -113,14 +107,13 @@ body {
 }
 	
 #content {
-	padding-bottom: 0;
 	flex: 1;
+	padding-bottom: 0;
 }
 
 #wrapper {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex: 1;
 }	
 
 #row {
@@ -132,7 +125,6 @@ body {
 
 #row > img {
 	width: calc(33.3% - 10px);
-	max-width: 100%;
 	aspect-ratio: 1/1;
 	object-fit: cover;
 }
@@ -173,34 +165,72 @@ body {
 	text-align: center;
 } 
 
-@media (max-width: 768px) {
-	#wrapper {
-		flex-direction: column;
-	}
-	.left-sidebar-links, .right-sidebar {
-		width: 100%;
-		padding: 1em 0;
-	}
-	#content {
-		width: 100%;
-	}
+@media (max-width: 1024px) {
 	#row > img {
 		width: calc(50% - 10px);
 	}
 }
-@media (max-width: 480px) {
+
+@media (max-width: 768px) {
+
+	/* Stack everything vertically */
+	#wrapper {
+		flex-direction: column;
+	}
+
+	/* Hide sidebars on mobile */
+	.left-sidebar,
+	.left-sidebar-links,
+	.right-sidebar {
+		display: none;
+	}
+
+	/* Make content full width */
+	#content {
+		width: 100%;
+		padding: 1em;
+	}
+
+	/* Header scales better */
+	#header {
+		height: auto;
+		padding: 1em;
+	}
+
+	#header img {
+		max-height: 120px;
+	}
+
+	/* Navigation wraps nicely */
+	#links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#links a {
+		margin: 0.5em;
+		display: block;
+	}
+
+	/* Image grids become 1–2 columns */
 	#row > img {
 		width: 100%;
 	}
+
+	/* Cards (if used) go full width */
 	.card {
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
 	}
-	#links {
-		flex-direction: column;
-		gap: 0.5em;
+
+	/* Body text more readable */
+	p {
+		font-size: 1em;
+		line-height: 1.5;
 	}
-	#content {
-		padding: 0 1em;
-	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
