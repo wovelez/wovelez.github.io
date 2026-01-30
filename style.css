@@ -112,13 +112,13 @@ body {
 }
 	
 #content {
-	flex: 1;
 	padding-bottom: 0;
 }
 
 #wrapper {
 	display: flex;
 	flex: 1;
+	flex-direction: row;
 }	
 
 #row {
