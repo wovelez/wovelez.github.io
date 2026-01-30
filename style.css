@@ -71,9 +71,9 @@ body {
 
 	
 #links a {
-	margin-left: 2em;
+	margin: 0.5em 1em;
 	color: white;
-	height: 100%;
+	display: block;
 	text-decoration: none;
 }
 
