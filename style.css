@@ -53,6 +53,7 @@ body {
 	font-family: Arial;
 	color: black;
 	text-align: center;
+	flex-shrink: 0;
 }
 
 #links {
@@ -118,7 +119,6 @@ body {
 
 #wrapper {
 	display: flex;
-	flex: 1;
 	flex-direction: row;
 }	
 
@@ -178,10 +178,10 @@ body {
 	}
 	.left-sidebar-links, .right-sidebar {
 		width: 100%;
-		padding: 1em o;
+		padding: 1em 0;
 	}
 	#row > img {
-		width: calc(50%-10px);
+		width: calc(50% - 10px);
 	}
 }
 @media (max-width: 480px) {
