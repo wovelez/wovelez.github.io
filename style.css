@@ -1,4 +1,4 @@
-<!-- This is the main CSS file for all pages -->
+
 * {
 	box-sizing: border-box;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 #footer {
-	background-color: #60f7eb;
+	background-color: #56bab0;
 	font-size: 10px;
 	text-decoration: none;
 	font-family: Arial;
@@ -76,6 +76,7 @@ body {
 	margin-left: 2em;
 	color: white;
 	height: 100%;
+	text-decoration: none;
 }
 
 #links p {
@@ -83,15 +84,22 @@ body {
 }
 
 #sidebar {
-	width: 15%;
-	background-color: #5f7a78;
+	background: linear-gradient(to bottom, #8d1da3, #56bab0);
 	display: block;
 	text-align: center;
 	padding-top: 0;
 }
 
-body.no_sidebar #sidebar {
-	display: none;
+.left-sidebar {
+	
+	width: 3%;
+}
+.left-sidebar-links {
+	width: 10%;
+}
+.right-sidebar {
+	
+	width: 3%;
 }
 
 #sidebar a{
@@ -99,12 +107,8 @@ body.no_sidebar #sidebar {
 }
 	
 #content {
-	width: 85%;
+	flex: 1;
 	padding-bottom: 0;
-}
-
-body.no_sidebar #content {
-	width: 100%;
 }
 
 #wrapper {
@@ -114,13 +118,50 @@ body.no_sidebar #content {
 
 #row {
 	display: flex;
-	gap: 10px;
+	gap: 30px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-#row img {
+#row > img {
 	width: calc(33.3% - 10px);
 	aspect-ratio: 1/1;
 	object-fit: cover;
 }
+
+.yarn-list {
+	text-align: left;
+	display: inline-block;
+	list-style: none;
+}
+
+.yarn-list-container {
+	text-align: center;
+}
+
+.card {
+	display: block;
+	text-decoration: none;
+	width: 30%;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	display: block;
+}
+
+.card-title {
+	display: block;
+	margin-top: 0.5em;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+} 
+

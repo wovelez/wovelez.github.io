@@ -5,13 +5,13 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
-	<body class="no_sidebar"> <!-- This is the start of the body -->
+	<body> <!-- This is the start of the body -->
 		<div id="header">
 			<img src="images/Vicioussticheslogo.jpg" alt="Logo">
 		</div>
 		
 		<div id="links">
-			<b>Links:</b> <!-- This should be in a row under the title -->
+			<!-- This should be in a row under the title -->
 			<a href="index.html">Home</a>
 			<a href="about.html">About</a>
 			<a href="educational.html">Information</a>
@@ -21,20 +21,26 @@
 		</div>
 		
 		<div id="wrapper">
-			<div id="sidebar">
+			<div id="sidebar" class="left-sidebar">
 			</div>
 			<div id="content">
 				<div id="buffer">
 				</div>
 				<img src="images/email.png" alt="Email">
+				<p><input type="F-name" placeholder="First Name"></p>
+				<p><input type="L-name" placeholder="Last Name"></p>
 				<p><input type="email" placeholder="Your Email"></p>
+				<p><input type="subject" placeholder="Subject"></p>
+				<p><input type="message" placeholder="Message"></p>
 				<p><input type="Submit"></p>
-				<h3>Under Construction</h3>
+				
+			</div>
+			<div id="sidebar" class="right-sidebar">
 			</div>
 		</div>
 		
 		<div id="footer">
-			<p>Last updated: 01/25/2026</p>
+			<p>Last updated: 01/29/2026</p>
 		</div>
 	
 	</body>
