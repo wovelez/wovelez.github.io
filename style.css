@@ -80,7 +80,7 @@ body {
 	white-space: nowrap;
 }
 
-#sidebar {
+.sidebar {
 	background: linear-gradient(to bottom, #8d1da3, #56bab0);
 	display: block;
 	text-align: center;
