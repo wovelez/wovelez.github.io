@@ -92,7 +92,7 @@ body {
 	width: 8%;
 }
 .left-sidebar-links {
-	width: 15%;
+	width: 8%;
 }
 .right-sidebar {
 	
@@ -106,6 +106,8 @@ body {
 #content {
 	flex: 1;
 	padding-bottom: 0;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #wrapper {
@@ -124,6 +126,11 @@ body {
 	width: calc(33.3% - 10px);
 	aspect-ratio: 1/1;
 	object-fit: cover;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .yarn-list {
@@ -170,25 +177,19 @@ body {
 
 @media (max-width: 768px) {
 
-	/* Stack everything vertically */
 	#wrapper {
 		flex-direction: column;
 	}
 
-	/* Hide sidebars on mobile */
-	.left-sidebar,
-	.left-sidebar-links,
-	.right-sidebar {
+	.left-sidebar,.left-sidebar-links,.right-sidebar {
 		display: none;
 	}
 
-	/* Make content full width */
 	#content {
 		width: 100%;
 		padding: 1em;
 	}
 
-	/* Header scales better */
 	#header {
 		height: auto;
 		padding: 1em;
@@ -198,7 +199,6 @@ body {
 		max-height: 120px;
 	}
 
-	/* Navigation wraps nicely */
 	#links {
 		display: flex;
 		flex-wrap: wrap;
@@ -210,24 +210,17 @@ body {
 		display: block;
 	}
 
-	/* Image grids become 1–2 columns */
 	#row > img {
 		width: 100%;
 	}
 
-	/* Cards (if used) go full width */
 	.card {
 		width: 100%;
 	}
 
-	/* Body text more readable */
 	p {
 		font-size: 1em;
 		line-height: 1.5;
 	}
 }
 
-img {
-	max-width: 100%;
-	height: auto;
-}
