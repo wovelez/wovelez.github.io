@@ -17,22 +17,33 @@
 		<div id="links">
 			<!-- This should be in a row under the title -->
 			<a href="about.html">About</a>
-			<a href="educational.html">Information</a>
-			<a href="portfolio.html">Portfolio </a>
+			<div class="dropdown">
+				<a href="educational.html">Information</a>
+				<div class="dropdown-content">
+					<a href="yarn.html">Yarn</a>
+					<a href="hooks.html">Hooks</a>
+					<a href="faq.html">FAQ</a>
+					</div>
+			</div>
+			<div class="dropdown">
+		    	<a href="portfolio.html" class="dropbtn">Portfolio</a>
+		    	<div class="dropdown-content">
+			    	<a href="amig.html">Amigurumi</a>
+			    	<a href="clothing.html">Clothing</a>
+			    	<a href="decor.html">Decor</a>
+		    	</div>
+	    	</div>
 			<a href="sale.html">Designs for Sale </a>
 			<a href="contact.html">Contact Us </a>
 		</div>
 		
 		<div id="wrapper">
-			<div id="sidebar" class="left-sidebar-links">
-				<p><a href="yarn.html">Yarn</a></p>
-				<p><a href="hooks.html">Hooks</a></p>
-				<p><a href="faq.html">FAQ</a></p>
+			<div id="sidebar" class="left-sidebar">
 			</div>
 			<div id="content">
 				<div id="buffer">
 				</div>
-				<img src="images/yarn.jpg" alt="Yarn">
+				<img src="images/yarn.jpg" alt="Yarn" width="800px" height="auto">
 				<p>Looking for information about different types of yarn? Or maybe what types of hooks to use?</p>
 				<p>Well this is the place. Feel free to look at some important information about both of those topics.</p>
 				<p>Looking for something else? Try our FAQ section.</p>
