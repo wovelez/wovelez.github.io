@@ -242,6 +242,7 @@ img {
 	color: white;
 	text-decoration: none;
 	white-space: nowrap;
+	transition: background-color 0.2s ease;
 }
 
 .dropdown:hover .dropdown-content {
@@ -249,5 +250,5 @@ img {
 }
 
 .dropdown-content a:hover {
-	background-color: black;
+	background-color:rgba(0,0,0,0.4);
 }
