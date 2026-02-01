@@ -230,7 +230,7 @@ img {
 	top: 100%;
 	left: 50%;
 	transform: translateX(-50%);
-	background-color: #8d1da3;
+	background:linear-gradient(to bottom, #8d1da3, #56bab0);
 	min-width: 180px;
 	z-index: 1000;
 	padding: 0.5em 0;
@@ -248,5 +248,5 @@ img {
 	display: block;
 }
 .dropdown-content a:hover {
-	background-color: #56bab0;
+	background-color: black;
 }
