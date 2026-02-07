@@ -269,7 +269,17 @@ img {
 .dark-mode{
 	background-color: black;
 	color: white;
-	.left-sidebar, .right-sidebar {
-		display: none;
-	}
+}
+
+.dark-mode .left-sidebar,
+.dark-mode .right-sidebar {
+	display: none;
+}
+
+.dark-mode .card-title {
+	color: white;
+}
+
+.rotating-img {
+	transition: opacity 0.6s ease-in-out;
 }
