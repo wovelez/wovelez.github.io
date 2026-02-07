@@ -21,6 +21,7 @@ body {
 	flex-direction: column;
 	margin: 0;
 	background-color: #f1ebf2;
+	color: black;
 }
 
 #header {
@@ -55,7 +56,8 @@ body {
 	text-align: center;
 }
 
-#links {
+#links,
+#links .nav-links {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -68,16 +70,26 @@ body {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
+	font-family: Helvetica;
 }
 
 
 	
-#links a {
+#links a, 
+#links .nav-links {
 	margin: 0.5em 1em;
 	color: white;
 	display: block;
 	text-decoration: none;
 	white-space: nowrap;
+}
+
+#links button.nav-links {
+	background: none;
+	border: none;	
+	padding: 0;
+	font-size: inherit;
+	cursor: pointer;
 }
 
 .sidebar {
@@ -251,4 +263,13 @@ img {
 
 .dropdown-content a:hover {
 	background-color:rgba(0,0,0,0.4);
+}
+
+
+.dark-mode{
+	background-color: black;
+	color: white;
+	.left-sidebar, .right-sidebar {
+		display: none;
+	}
 }
