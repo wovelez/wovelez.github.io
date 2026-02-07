@@ -266,17 +266,17 @@ img {
 }
 
 
-html .dark-mode{
+.dark-mode{
 	background-color: black;
 	color: white;
 }
 
-html .dark-mode .left-sidebar,
-html .dark-mode .right-sidebar {
+.dark-mode .left-sidebar,
+.dark-mode .right-sidebar {
 	display: none;
 }
 
-html .dark-mode .card-title {
+.dark-mode .card-title {
 	color: white;
 }
 

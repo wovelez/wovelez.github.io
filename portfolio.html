@@ -5,16 +5,38 @@
 		<meta name="description" content="See different crochet designs.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Vicious Stitches</title> <!-- This is the title displayed on the web browser -->
-		<script>
-			if (localStorage.getItem("darkMode") === "enabled") {
-				document.documentElement.classList.add("dark-mode");
-			}
-		</script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	
 	<body> <!-- This is the start of the body -->
-		<div id="site-header"></div>
+		<div id="header">
+			<a href="index.html"> 
+				<img src="images/Vicioussticheslogo.jpg" alt="Logo"></a>
+		</div>
+		
+		<div id="links">
+			<!-- This should be in a row under the title -->
+			<a href="about.html">About</a>
+			<div class="dropdown">
+				<a href="educational.html">Information</a>
+				<div class="dropdown-content">
+					<a href="yarn.html">Yarn</a>
+					<a href="hooks.html">Hooks</a>
+					<a href="faq.html">FAQ</a>
+					</div>
+			</div>
+			<div class="dropdown">
+		    	<a href="portfolio.html" class="dropbtn">Portfolio</a>
+		    	<div class="dropdown-content">
+			    	<a href="amig.html">Amigurumi</a>
+			    	<a href="clothing.html">Clothing</a>
+			    	<a href="decor.html">Decor</a>
+		    	</div>
+	    	</div>
+			<a href="sale.html">Designs for Sale </a>
+			<a href="contact.html">Contact Us </a>
+			<button class="nav-links" id="toggle-mode" onclick="myFunction()">Dark Mode</button>
+		</div>
 		
 		<div id="wrapper">
 			<div class="sidebar left-sidebar">

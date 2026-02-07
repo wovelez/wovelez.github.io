@@ -94,24 +94,11 @@ rotatingImages.forEach((img, i) => {
   }, staggerDelay);
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-
-  // Load header
-  fetch("header.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("site-header").innerHTML = data;
-      updateButtonText(); // make sure dark-mode button text is correct
-    })
-    .catch(error => console.error("Header failed to load:", error));
-
-  // Load footer
   fetch("footer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("footer").innerHTML = data;
     })
     .catch(error => console.error("Footer failed to load:", error));
-
 });
